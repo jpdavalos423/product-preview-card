@@ -16,20 +16,97 @@
 
 body {
   background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .card {
   background-color: white;
+  border-radius: 10px;
 
   display: flex;
   width: 600px;
 }
 
+.preview-img {
+  width: 300px;
+}
+
+.content {
+  padding: 25px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .preview-img img {
   width: 100%;
+  height: 100%;
+
+  border-radius: 10px 0 0 10px;
+}
+
+.category p {
+  margin: 0;
+}
+
+.title h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+
+  margin: 0;
+}
+
+.description p {
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sale-price span {
+  font-family: "Fraunces";
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.original-price span {
+  text-decoration: line-through;
+  margin-left: 20px;
+}
+
+.confirm {
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 5px;
+
+  padding: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm span {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.confirm-link {
+  text-decoration: none;
 }
